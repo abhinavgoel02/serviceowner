@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/fragment_add_bike"
+    tools:context="com.wheels2spin.serviceowner.BikeDetailsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bike Details"
+
+        android:textColor="#ffffff"
+        android:background="#f44336"
+        android:id="@+id/bike_details" />
+
+    <EditText
+        android:hint="@string/new_bike_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:id="@+id/bike_name" />
+
+    <EditText
+        android:hint="@string/new_bike_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:ems="10"
+        android:id="@+id/bike_number" />
+
+    <EditText
+        android:hint="@string/new_bike_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/bike_year" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Price Details"
+        android:textColor="#ffffff"
+        android:background="#f44336"
+        android:id="@+id/price_details" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/daily"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:hint="Daily"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/weekly"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:hint="Weekly"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/monthly"
+            android:inputType="number"
+            android:hint="Monthly"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Extra"
+        android:textColor="#ffffff"
+        android:background="#f44336"
+        android:id="@+id/extra" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insured"
+        android:id="@+id/insured"
+        android:layout_gravity="center_vertical" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Geared"
+        android:id="@+id/geared"
+        android:layout_gravity="center_vertical" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/next" />
+
+</LinearLayout>

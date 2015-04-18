@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/com_parse_ui_vertical_margin"
+    android:paddingLeft="@dimen/com_parse_ui_horizontal_margin"
+    android:paddingRight="@dimen/com_parse_ui_horizontal_margin"
+    android:paddingBottom="@dimen/com_parse_ui_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/register_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/company_name_input_hint"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/register_company_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/company_address_input_hint"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/register_check_out_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/company_checkout_time_hint"
+        android:inputType="time" />
+
+    <Button
+        android:id="@+id/register_complete_registration"
+        style="@style/ParseLoginUI.Button"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:text="@string/finish_button_label" />
+
+</LinearLayout>
+<!-- From: file:/C:/Users/Abhinav%20Goel/AndroidStudioProjects/serviceowner/ParseLoginUI/res/layout/fragment_registration.xml -->

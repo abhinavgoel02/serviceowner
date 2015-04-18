@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/com_parse_ui_vertical_margin"
+    android:paddingLeft="@dimen/com_parse_ui_horizontal_margin"
+    android:paddingRight="@dimen/com_parse_ui_horizontal_margin"
+    android:paddingBottom="@dimen/com_parse_ui_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/register_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/company_name_input_hint"
+        android:inputType="textPersonName|textCapWords"
+        />
+
+    <EditText
+        android:id="@+id/register_company_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/company_phone_input_hint"
+        android:layout_below="@+id/register_company_name"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/register_company_shop_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/company_shop_no_input_hint"
+        android:inputType="textPostalAddress|textCapWords"
+        android:layout_below="@+id/register_company_phone"/>
+
+    <EditText
+        android:id="@+id/register_company_locality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/company_locality_input_hint"
+        android:inputType="textPostalAddress|textCapWords"
+        android:layout_below="@+id/register_company_shop_no"/>
+
+    <EditText
+        android:id="@+id/register_company_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/company_area_input_hint"
+        android:inputType="textPostalAddress|textCapWords"
+        android:layout_below="@+id/register_company_locality"/>
+
+    <EditText
+        android:id="@+id/register_company_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/company_city_input_hint"
+        android:inputType="textPostalAddress|textCapWords"
+        android:layout_below="@+id/register_company_area"/>
+
+    <EditText
+        android:id="@+id/register_company_pin_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:hint="@string/company_pin_code_input_hint"
+        android:inputType="number"
+        android:layout_below="@+id/register_company_city"/>
+
+    <Button
+        android:id="@+id/register_check_out_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:layout_centerHorizontal="true"
+        android:text="@string/check_out_time_button_label"
+        android:drawableLeft="@drawable/clock"
+        android:drawablePadding="@dimen/com_facebook_likebutton_compound_drawable_padding"
+        android:layout_below="@+id/register_company_pin_code"/>
+
+    <Button
+        android:id="@+id/register_complete_registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finish_button_label"
+        android:layout_marginTop="@dimen/com_parse_ui_small_vertical_spacing"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
